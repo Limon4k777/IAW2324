@@ -7,4 +7,4 @@ Los programas que vamos a utilizar son los siguientes:
 -Git
 -Visual Studio Code
 -Docker
--Virtual Box
+-Virtual Box 
