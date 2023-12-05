@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #but {
+        height: 200px;
+        width:200px;
+        display:Flex;
+        align-content: center;
+        background-color: blue;
+        border: none
+    }
+    #caja {
+        align-self: center;
+        align-content: center;
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        height: 200px;
+        width:200px;
+    }
+</style>
+<body>
+
+    <div id="caja">
+        <button id="but" onclick=cuenta()></button>
+    </div>
+
+    <div id="puntos"></div>
+    <script>
+        let a = 0
+        function cuenta() {
+            a = a+1
+            document.getElementById("puntos").innerHTML = a
+        }
+    </script>
+    
+</body>
+</html>

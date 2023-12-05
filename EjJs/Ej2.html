@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .dev {
+            display: inline-block;
+            align-items: center;
+        }
+        .circle1 {
+            background-color: red;
+            height: 200px;
+            width: 200px;
+            border-radius: 100%;
+            
+        }
+        .circle2 {
+            background-color: green;
+            height: 200px;
+            width: 200px;
+            border-radius: 100%;
+            
+        }
+        .circle3 {
+            background-color: blue;
+            height: 200px;
+            width: 200px;
+            border-radius: 100%;
+            
+        }
+        .hidden3{
+            background-color: blue;
+            height: 200px;
+            width: 200px;
+            border-radius: 100%;
+            display:none
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="dev">
+    <p class="circle1"></p>
+    <button>Ocultar</button>
+    </div>
+    <div class="dev">
+    <p class="circle2"></p>
+    <button>Ocultar</button>
+    </div>
+    <div class="dev">
+    <p class="circle3"></p>
+    <button onclick=a()>Ocultar</button>
+</div>
+<script>
+function a(){
+    document.getElementsByClassName('circle3').style = ".hidden3";
+}
+</script>
+</body>
+</html>

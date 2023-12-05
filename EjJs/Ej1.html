@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for=''>Número 1:</label><input type="text" id="a"><br>
+    <label for=''>Número 2:</label><input type="text" id="b"><br>
+    <button onclick=sumar()>+</button>
+    <button onclick=restar()>-</button>
+    <button onclick=multi()>*</button>
+    <button onclick=dividir()>/</button>
+    <button onclick=power()>^</button><br>
+    <p id="res"></p>
+    <script>
+        
+        function sumar(){
+            var resultado = 0
+            let a = parseFloat(document.getElementById("a").value);
+            let b = parseFloat(document.getElementById("b").value);
+            resultado = a+b
+            document.getElementById('res').innerHTML = resultado;
+        }
+        function restar(){
+            var resultado = 0
+            let a = parseFloat(document.getElementById("a").value);
+            let b = parseFloat(document.getElementById("b").value);
+            resultado = a-b
+            document.getElementById('res').innerHTML = resultado;
+        }
+        function multi(){
+            var resultado = 0
+            let a = parseFloat(document.getElementById("a").value);
+            let b = parseFloat(document.getElementById("b").value);
+            resultado = a*b
+            document.getElementById('res').innerHTML = resultado;
+        }
+        function dividir(){
+            var resultado = 0
+            let a = parseFloat(document.getElementById("a").value);
+            let b = parseFloat(document.getElementById("b").value);
+            resultado = a/b;    
+            document.getElementById('res').innerHTML = resultado;
+        }
+        function power(){
+            var resultado = 0
+            let a = parseFloat(document.getElementById("a").value);
+            let b = parseFloat(document.getElementById("b").value);
+            resultado = Math.pow(a,b);
+            document.getElementById('res').innerHTML = resultado;
+        }
+    </script>
+</body>
+</html>

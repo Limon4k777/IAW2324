@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Peso (kg)</label><input id="a"><br>
+    <label>Altura (cm)</label><input id="b"><br>
+    <buton onclick=calc()>Calcular</buton><br>
+    <p id="resultado"></p>
+    <script>
+        function calc() {
+            let a = parseFloat(document.getElementById("a").value);
+            let b = parseFloat(document.getElementById("b").value);
+            let resultado = 0;
+            resultado = a/(b*b  )*10000;
+
+            if (18.5>resultado) {
+                document.getElementById('resultado').innerHTML = "infrapeso";
+            } else if (18.5<=resultado&&resultado<24.9) {
+                document.getElementById('resultado').innerHTML = "peso normal";
+            } else if (24.9<resultado&&resultado<30) {
+                document.getElementById('resultado').innerHTML = "sobrepeso";
+            } else if (30<resultado) {
+                document.getElementById('resultado').innerHTML = "OBESO";
+            };
+        }
+    </script>
+</body>
+</html>
